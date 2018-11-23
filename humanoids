@@ -1,0 +1,20 @@
+class Humanoid
+  attr_reader :name, :age, :alignment, :height, :weight
+  
+  def initialize(name,age,alignment,height, weight)
+    @name = name
+    @age = age
+    @alignment = alignment
+    @height = height
+    @weight = weight
+  end
+
+  def info
+    stats = {
+      "Name" => name, 
+      "Age" => age,
+      "Alignment" => alignment,
+      "Height" => height,
+      "Weight" => weight}
+  end
+end
